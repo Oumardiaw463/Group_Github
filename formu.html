@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cadre{
+            width: 800px;
+            height: 350px;
+            margin: auto;
+            display: flex;
+            margin-top: 100px;
+            border: none;
+            background-color: rgb(18, 183, 183);
+        }
+        .left{
+            width: 50%;
+            height: 100%;
+            border: none;
+            background: white;
+            border-radius: 5px;
+        }
+        .np{
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            column-gap: 20px;
+            row-gap: 8px;
+            width: 95%;
+            margin-left: 10px;
+        }
+        form button{
+            width: 95%;
+            display: block;
+            border: none;
+           padding: 5px 0px;
+           background:  rgb(18, 183, 183);
+           color: white;
+           border-radius: 3px;
+           
+           margin-left: 10px;
+        }
+        .mdp{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 8px;
+            width: 95%;
+            margin-left: 10px;
+            
+        }
+        h3{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .right{
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 90px;
+            color: White;
+        } 
+        span{
+            font-weight: bolder;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(18, 183, 183);">
+    <div class="cadre">
+        <div class="left">
+            <form action="">
+                <h3>INSCRIPTION</h3>
+                <hr>
+                <div class="np">
+                    <label for="">Nom</label>
+                    <label for="">Prénom</label>
+                </div> 
+                <div class="np"> 
+                    <input type="text">
+                    <input type="text">
+                </div><br>
+                <div class="mdp">
+                  <label for="">Adresse Mail</label>
+                  <input type="email">
+                  <label for="">Mot de passe</label>
+                  <input type="password">
+                </div><br>
+                <button>S'inscrire</button>
+            </form> <br>
+            <div style="text-align: center;">vous avez déjà un compte? <a href="" style="text-decoration: none; color: rgb(18, 183, 183);">Se connecter</a></div>
+        </div>
+        <div class="right">
+            FORMULAIRE <br>
+            <span>HTML<br>CSS</span>
+        </div>
+    </div>
+</body>
+</html>
